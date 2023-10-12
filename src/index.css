@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Play:wght@700&display=swap');
+
+@layer base {
+  body {
+    background: #f1f1f1;
+  }
+  h1 {
+    @apply text-xl font-medium capitalize;
+  }
+}
+
+.link {
+  @apply p-2.5 flex gap-6 items-center md:cursor-pointer cursor-default font-medium;
+}
+
+.Link:hover {
+  @apply bg-blue-100;
+}
+
+.active {
+  @apply bg-[hsla(0,0%,100%,0.1)] text-white border-l-purple-600 border-l-4;
+}
